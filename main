@@ -304,7 +304,7 @@ function bulletrain()
 	end
 
 function lock()
-	if debounce == true and bullets ~= 0 then
+	if debounce == true and bullets ~= 0 and mouse.Target.Parent:FindFirstChildOfClass("Humanoid") and mouse.Target.Parent:FindFirstChild("Head") then
 		debounce = false
 		Anim = "3"
 		local a = (holding.Hole.Position - mouse.Target.Parent:WaitForChild("Head",30).Position).magnitude
@@ -373,7 +373,7 @@ end)
 
 mouse.KeyDown:connect(function(K)
 	if K == "e" then
-		bulletrain()
+		lock()
 	end
 	if K == "f" then
 		lock()
