@@ -92,6 +92,7 @@ end
   Click/Hold = Shoot
   E = Bullet Storm
   R = Reload
+  F = LockOn
 ]]
 ----variables
 local plr = game:GetService("Players")["danlovespoop"]
