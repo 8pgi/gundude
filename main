@@ -304,12 +304,12 @@ function bulletrain()
 	end
 
 function lockon()
-if debounce == true and bullets ~= 0 and Mouse.Target.Parent:FindFirstChildOfClass("Humanoid") and Mouse.Target.Parent:FindFirstChild("Head") then
+	if debounce == true and bullets ~= 0 and mouse.Target.Parent:FindFirstChildOfClass("Humanoid") and mouse.Target.Parent:FindFirstChild("Head") then
 		debounce = false
 		--bullets = bullets - 1
 		Anim = "3"
-		local a = (holding.Hole.Position - Mouse.Target.Parent:WaitForChild("Head",30).Position).magnitude
-		local targetpos = Mouse.Target.Parent:WaitForChild("Head",30).Position
+		local a = (holding.Hole.Position - mouse.Target.Parent:WaitForChild("Head",30).Position).magnitude
+		local targetpos = mouse.Target.Parent:WaitForChild("Head",30).Position
 		local target = mouse.Target
 		for i = 0,2.8,0.1 do
 			for i = 1,1 do
@@ -328,6 +328,7 @@ if debounce == true and bullets ~= 0 and Mouse.Target.Parent:FindFirstChildOfCla
 		bullet.Color = Color3.new(1, 1, 0)
 		bullet.Material = "Neon"
 		bullets = bullets - 1
+		--local a = (holding.Hole.Position - mouse.Target.Parent:WaitForChild("Head").Position).magnitude
 		bullet.Size = Vector3.new(0.5,0.5,a)
 		bullet.CFrame = CFrame.new(holding.Hole.Position,targetpos) * CFrame.new(0,0,-a/2)
 		local sound = Instance.new("Sound",chr["Right Arm"])
@@ -356,6 +357,7 @@ if debounce == true and bullets ~= 0 and Mouse.Target.Parent:FindFirstChildOfCla
 		sound:Destroy()
 	end
 end
+
 ----keys
 local HOLD = false
 mouse.Button1Down:connect(function()
