@@ -304,7 +304,7 @@ function bulletrain()
 	end
 
 function lockon()
-if debounce == true and bullets ~= 0 and mouse.Target.Parent:FindFirstChildOfClass("Humanoid") and mouse.Target.Parent:FindFirstChild("Head") then
+if debounce == true and bullets ~= 0  then
 		debounce = false
 		--bullets = bullets - 1
 		Anim = "3"
