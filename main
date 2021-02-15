@@ -305,7 +305,6 @@ function bulletrain()
 	end
 
 function lock()
-local x,r = pcall(function()
 		if debounce == true and bullets ~= 0 and mouse.Target.Parent:FindFirstChildOfClass("Humanoid") and mouse.Target.Parent:FindFirstChild("Head") then
 		debounce = false
 		--bullets = bullets - 1
@@ -358,7 +357,6 @@ local x,r = pcall(function()
 		bullet:Destroy()
 		sound:Destroy()
 	end
-	end)
 end
 
 ----keys
