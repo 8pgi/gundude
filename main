@@ -358,12 +358,12 @@ local x,r = pcall(function()
 		bullet:Destroy()
 		sound:Destroy()
 	end
-	if x then
+	end
+	end))
+		if x then
 	print(x)
 	else
 	print(r)
-	end
-	end))
 end
 
 ----keys
