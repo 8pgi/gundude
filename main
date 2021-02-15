@@ -3,6 +3,7 @@
 
 if game:GetService("RunService"):IsClient() then error("Script must be server-side in order to work; use h/ and not hl/") end
 local Player,Mouse,mouse,UserInputService,ContextActionService = owner
+local CAS
 do
 	print("FE Compatibility code by Mokiros | Translated to FE by iPxter")
 	script.Parent = Player.Character
@@ -21,7 +22,7 @@ do
 	--Creating fake input objects with fake variables
 	local m = {Target=nil,Hit=CFrame.new(),KeyUp=fakeEvent(),KeyDown=fakeEvent(),Button1Up=fakeEvent(),Button1Down=fakeEvent()}
 	local UIS = {InputBegan=fakeEvent(),InputEnded=fakeEvent()}
-	local CAS = {Actions={},BindAction=function(self,name,fun,touch,...)
+	CAS = {Actions={},BindAction=function(self,name,fun,touch,...)
 		CAS.Actions[name] = fun and {Name=name,Function=fun,Keys={...}} or nil
 	end}
 	--Merged 2 functions into one by checking amount of arguments
