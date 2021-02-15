@@ -358,8 +358,7 @@ local x,r = pcall(function()
 		bullet:Destroy()
 		sound:Destroy()
 	end
-	end
-	end))
+	end)
 end
 
 ----keys
