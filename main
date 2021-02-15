@@ -339,9 +339,9 @@ local x,r = pcall(function()
 		sound:Play()
 		coroutine.resume(coroutine.create(function()
 			if target.Parent:FindFirstChildOfClass("Humanoid") and not target:IsDescendantOf(chr) then
-				mouse.Target.Parent.Humanoid:TakeDamage(mouse.Target.Parent.Humanoid.MaxHealth)
-				debris(mouse.Target.Parent:WaitForChild("Head",30))
-				mouse.Target.Parent:WaitForChild("Head",30):Destroy()
+				--[[target.Parent.Humanoid:TakeDamage(target.Parent.Humanoid.MaxHealth)
+				debris(target.Parent:WaitForChild("Head",30))
+				target.Parent:WaitForChild("Head",30):Destroy()]]
 			end
 		end))
 		for i = 0,2.8,0.1 do
