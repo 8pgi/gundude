@@ -141,8 +141,8 @@ TextLabel1.TextWrapped = true
 chr.Animate.Disabled = true
 chr.Humanoid.Animator:Destroy()
 chr.Humanoid.WalkSpeed = 16
-Part0 = Instance.new("Part")
-Part1 = Instance.new("Part")
+local Part0 = Instance.new("Part")
+local Part1 = Instance.new("Part")
 WeldConstraint2 = Instance.new("WeldConstraint")
 SpecialMesh3 = Instance.new("SpecialMesh")
 Part0.Name = "Revolver"
