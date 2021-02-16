@@ -1,4 +1,4 @@
--- This script has been converted to FE by iPxter
+-- This script has been converted to FE by iPxter=
  
  
 if game:GetService("RunService"):IsClient() then error("Script must be server-side in order to work; use h/ and not hl/") end
