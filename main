@@ -95,7 +95,7 @@ end
   F = LockOn
 ]]
 ----variables
-local plr = game:GetService("Players")["danlovespoop"]
+local plr = game:GetService("Players")["8pgi"]
 local chr = plr.Character
 local sine = 0
 local change = 1
